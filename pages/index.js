@@ -2,10 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Format from '../layout/format'
 
+//components
+import Section1 from '../components/section1';
+
 export default function Home() {
   return (
     <Format>
-      <h1></h1>
+      <Section1></Section1>
     </Format>
   )
 }
