@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Author from "./_child/author";
+import Author from "./author";
 
 export default function related() {
   return (
