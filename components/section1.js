@@ -50,7 +50,7 @@ function Slide() {
         <div className="cat flex flex-col py-3">
           <Link href={"/"} legacyBehavior>
             <a className="text-orange-600 hover:text-orange-800">
-              Buisiness, Travel
+              Business, Travel
             </a>
           </Link>
           <Link href={"/"} legacyBehavior>
