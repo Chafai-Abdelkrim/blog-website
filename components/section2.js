@@ -5,6 +5,7 @@ import fetcher from "../lib/fetcher";
 
 export default function section2() {
   const { data, isLoading, isError } = fetcher("api/posts");
+
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error</div>;
 
