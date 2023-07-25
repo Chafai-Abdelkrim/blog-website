@@ -47,7 +47,7 @@ function Post() {
             </a>
           </Link>
         </div>
-        <Author></Author>
+        {author ? <Author {...author}></Author> : <></>}
       </div>
     </div>
   );
