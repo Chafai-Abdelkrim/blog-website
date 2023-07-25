@@ -55,8 +55,8 @@ function Slide({ data }) {
           </a>
         </Link>
       </div>
-      <div className="info flex justify-center flex-col">
-        <div className="cat flex flex-col py-3">
+      <div className="info flex justify-center flex-col p-4">
+        <div className="cat flex flex-col py-3 pl-4">
           <Link href={`/posts/${id}`} legacyBehavior>
             <a className="text-orange-600 hover:text-orange-800">
               {category || "Unknown"}
@@ -68,14 +68,14 @@ function Slide({ data }) {
             </a>
           </Link>
         </div>
-        <div className="title">
+        <div className="title text-center md:text-left">
           <Link href={`/posts/${id}`} legacyBehavior>
-            <a className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600">
+            <a className="text-2xl md:text-6xl font-bold text-gray-800 hover:text-gray-600">
               {title || "No Title"}
             </a>
           </Link>
         </div>
-        <p className="text-gray-500 py-3">{description || " No description"}</p>
+        <p className="text-gray-500 py-3 text-center md:text-left">{description || " No description"}</p>
         {author ? <Author {...author}></Author> : <></>}
       </div>
     </div>

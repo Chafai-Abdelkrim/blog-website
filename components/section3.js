@@ -39,7 +39,7 @@ function Post({ data }) {
   const { id, title, category, img, description, published, author } = data;
 
   return (
-    <div className="grid">
+    <div className="grid p-4">
       <div className="images">
         <Link href={`/posts/${id}`}>
           <Image src={img || ""} width={600} height={400} />
