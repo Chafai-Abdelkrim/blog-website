@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Author from "./_child/author";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
 import "swiper/css";
 import fetcher from "../lib/fetcher";
 import Error from "./_child/error";
@@ -14,7 +13,6 @@ export default function section1() {
   if (isLoading) return <Spinner></Spinner>;
   if (isError) return <Error></Error>;
 
-  SwiperCore.use([Autoplay]);
 
   const bg = {
     background: "url('/images/banner.png') no-repeat",
@@ -28,9 +26,6 @@ export default function section1() {
         <Swiper
           slidesPerView={1}
           loop={true}
-          autoplay={{
-            delay: 2000,
-          }}
         >
           {data.map((value, index) => (
             <SwiperSlide key={index}>
